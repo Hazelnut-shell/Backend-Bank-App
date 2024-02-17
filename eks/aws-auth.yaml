@@ -1,0 +1,13 @@
+apiVersion: v1 
+kind: ConfigMap 
+metadata: 
+  name: aws-auth 
+  namespace: kube-system 
+data: 
+  mapUsers: | 
+    - userarn: arn:aws:iam::326128725807:user/github-ci
+      username: github-ci
+      groups:
+        - system:masters
+
+ #userarn: arn of the user we want to give access to cluster
