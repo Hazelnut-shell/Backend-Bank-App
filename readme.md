@@ -1,0 +1,4 @@
+- Implemented backend RESTful APIs in Go using Gin, allowing users to manage bank accounts and transfer money, and handled deadlocks in concurrent transfer transactions
+- Connected the application with PostgreSQL, and managed database schema migrations using go-migrate
+- Wrote thorough unit tests for database operations and HTTP APIs, achieving over 80$\%$ code coverage
+- Built and pushed Docker image to AWS ECR, deployed it to a Kubernetes cluster on AWS EKS, and built a CI/CD pipeline with Github Actions to automate testing and deployment
